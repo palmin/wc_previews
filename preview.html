@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- inside Working Copy these dependencies are loaded locally for offline & privacy reasons -->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
+	<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js" type="text/javascript"></script>
+</head>
+<body>
+ <!-- size of content will be changed to adapt to app -->
+ <div id="content"></div>
+
+  <script type="text/javascript">
+    function renderPreview(url) {
+	console.warn("You should redefine renderPreview")
+	
+  	fetch(url, { method: 'get' })
+    	.then(response => response.text())
+    	.then(text => {
+	  var pre = document.createElement("pre")
+	  pre.content = text
+	  document.getElementById('content').appendChild(pre)
+	})
+    	.catch(err => {
+  	  console.error(err);	
+  	})
+}
+  </script>
+
+  <!-- ${JAVASCRIPT} is where you supply the rendering mode, where you need to define a new renderPreview function
+       that renders into the #content div. -->
+  <script type="text/javascript">${JAVASCRIPT}</script>
+
+  <script type="text/javascript">
+   // $SOURCE is a local link to the file being previewed
+   renderPreview("${SOURCE}")
+  </script>
+ <body>
+</html>
