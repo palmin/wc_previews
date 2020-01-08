@@ -77,10 +77,9 @@
    <script type="text/javascript">${JAVASCRIPT}</script>
    
   <script type="text/javascript">
-   // $SOURCE is a local link to the file being previewed
-   let url = "$SOURCE"
-   if(typeof renderPreview == 'function') renderPreview(url)
-   else defaultRenderPreview(url)
+   // ${SOURCE} is a local link to the file being previewed
+   if(typeof renderPreview == 'function') renderPreview("${SOURCE}")
+   else defaultRenderPreview("${SOURCE}")
   </script>
  <body>
 </html>
