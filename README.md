@@ -1,7 +1,7 @@
 Working Copy previews
 =====================
 
-Working Copy is a Git client for iOS that allows previewing Markdown, Jupyter Notebooks, org-mode and AsciiDoc
+[Working Copy](https://workingcopy.app/) is a Git client for iOS that allows previewing Markdown, Jupyter Notebooks, org-mode and AsciiDoc
 and this repository shows how to change and extend this preview feature by adding javascript and css files.
 
 You should start by cloning this repository inside Working Copy. It needs to be at the outermost level. The
