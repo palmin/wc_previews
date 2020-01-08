@@ -1,0 +1,429 @@
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: rgba(255,255,255,1);
+    -webkit-text-size-adjust: none;
+}
+
+* {
+    color: rgba(0,0,0,1);
+}
+
+.hljs,
+.hljs-subst,
+.hljs-tag .hljs-title,
+.nginx .hljs-title {
+    color: rgba(219,44,56,1);
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title {
+    color: rgba(41,80,255,1);
+}
+
+.markdown .hljs-code {
+    color: rgba(41,80,255,1);
+}
+
+.hljs-variable,
+.hljs-constant,
+.hljs-parent,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-name,
+.haml .hljs-symbol,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.hljs-template_tag,
+.django .hljs-variable,
+.smalltalk .hljs-class,
+.hljs-addition,
+.hljs-flow,
+.hljs-stream,
+.bash .hljs-variable,
+.pf .hljs-variable,
+.apache .hljs-tag,
+.apache .hljs-cbracket,
+.tex .hljs-command,
+.tex .hljs-special,
+.erlang_repl .hljs-function_or_atom,
+.asciidoc .hljs-header,
+.markdown .hljs-header,
+.coffeescript .hljs-attribute,
+.tp .hljs-variable {
+    color: rgba(2,66,171,1);
+}
+
+.smartquote,
+.hljs-comment,
+.hljs-annotation,
+.diff .hljs-header,
+.hljs-chunk,
+.asciidoc .hljs-blockquote,
+.markdown .hljs-blockquote {
+    color: rgba(69,184,72,1);
+}
+
+.hljs-number,
+.hljs-date,
+.hljs-regexp,
+.hljs-literal,
+.hljs-hexcolor,
+.smalltalk .hljs-symbol,
+.smalltalk .hljs-char,
+.go .hljs-constant,
+.hljs-change,
+.hljs-link,
+.lasso .hljs-variable,
+.makefile .hljs-variable,
+.asciidoc .hljs-bullet,
+.markdown .hljs-bullet,
+.asciidoc .hljs-link_url,
+.markdown .hljs-link_url {
+    color: rgba(219,44,56,1);
+}
+
+.hljs-label,
+.ruby .hljs-string,
+.hljs-decorator,
+.hljs-filter .hljs-argument,
+.hljs-localvars,
+.hljs-array,
+.hljs-attr_selector,
+.hljs-important,
+.hljs-pseudo,
+.hljs-pi,
+.haml .hljs-bullet,
+.hljs-doctype,
+.hljs-deletion,
+.hljs-envvar,
+.hljs-shebang,
+.apache .hljs-sqbracket,
+.nginx .hljs-built_in,
+.tex .hljs-formula,
+.erlang_repl .hljs-reserved,
+.hljs-prompt,
+.asciidoc .hljs-link_label,
+.markdown .hljs-link_label,
+.vhdl .hljs-attribute,
+.clojure .hljs-attribute,
+.asciidoc .hljs-attribute,
+.lasso .hljs-attribute,
+.coffeescript .hljs-property,
+.hljs-phony {
+    color: rgba(41,80,255,1);
+}
+
+.hljs-keyword,
+.hljs-id,
+.hljs-title,
+.hljs-built_in,
+.css .hljs-tag,
+.hljs-doctag,
+.smalltalk .hljs-class,
+.hljs-winutils,
+.bash .hljs-variable,
+.pf .hljs-variable,
+.apache .hljs-tag,
+.hljs-type,
+.hljs-typename,
+.tex .hljs-command,
+.asciidoc .hljs-strong,
+.markdown .hljs-strong,
+.hljs-request,
+.hljs-status,
+.tp .hljs-data,
+.tp .hljs-io {
+    font-size: 110%;
+    color: rgba(219,44,56,1);
+}
+
+.hljs-title,
+.hljs-section {
+    color: rgba(41,80,255,1);
+}
+
+.hljs-string {
+    color: rgba(219,44,56,1);
+}
+
+.asciidoc .hljs-emphasis,
+.markdown .hljs-emphasis,
+.tp .hljs-units {
+    font-style: italic;
+    color: rgba(41,80,255,1);
+}
+
+.markdown .hljs-strikethrough {
+    color: rgba(41,80,255,1);
+}
+
+.hljs-attr, * .hljs-attr {
+    color: rgba(41,80,255,1);
+}
+
+.nginx .hljs-built_in {
+    font-weight: normal;
+}
+
+.coffeescript .javascript,
+.javascript .xml,
+.lasso .markup,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+    font-size: 90%;
+    /*background-color: rgba(0,0,0,0.050);*/
+}
+
+ code, code.hljs {background: rgba(239,239,239,1); } pre > code.hljs { border: 1px solid #ddd; } 
+
+html {
+    background-color: rgba(255,255,255,1);
+}
+
+body {
+    padding-top: 10px;
+    background-color: rgba(255,255,255,1);
+    font: 11pt .SF UI Mono;
+}
+
+* {
+    color: rgba(34,34,34,1);
+    font-family: -apple-system;
+}
+
+img { max-width: 100%; }
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    padding: .5625em .625em;
+    border: 1px solid rgba(34,34,34,0.250);
+}
+
+tr:nth-child(even) {
+    background: rgba(239,239,239,1);
+}
+
+a,a:link,a:visited,a:active {color:rgb(57,156,252)}  body { font:11pt monospace !important; }
+
+@media (prefers-color-scheme: dark) {
+
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: rgba(19,24,30,1);
+    -webkit-text-size-adjust: none;
+}
+
+* {
+    color: rgba(144,221,242,1);
+}
+
+.hljs,
+.hljs-subst,
+.hljs-tag .hljs-title,
+.nginx .hljs-title {
+    color: rgba(204,102,109,1);
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title {
+    color: rgba(102,203,155,1);
+}
+
+.markdown .hljs-code {
+    color: rgba(102,203,155,1);
+}
+
+.hljs-variable,
+.hljs-constant,
+.hljs-parent,
+.hljs-tag .hljs-value,
+.hljs-rule .hljs-value,
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-name,
+.haml .hljs-symbol,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.hljs-template_tag,
+.django .hljs-variable,
+.smalltalk .hljs-class,
+.hljs-addition,
+.hljs-flow,
+.hljs-stream,
+.bash .hljs-variable,
+.pf .hljs-variable,
+.apache .hljs-tag,
+.apache .hljs-cbracket,
+.tex .hljs-command,
+.tex .hljs-special,
+.erlang_repl .hljs-function_or_atom,
+.asciidoc .hljs-header,
+.markdown .hljs-header,
+.coffeescript .hljs-attribute,
+.tp .hljs-variable {
+    color: rgba(102,165,204,1);
+}
+
+.smartquote,
+.hljs-comment,
+.hljs-annotation,
+.diff .hljs-header,
+.hljs-chunk,
+.asciidoc .hljs-blockquote,
+.markdown .hljs-blockquote {
+    color: rgba(142,153,138,1);
+}
+
+.hljs-number,
+.hljs-date,
+.hljs-regexp,
+.hljs-literal,
+.hljs-hexcolor,
+.smalltalk .hljs-symbol,
+.smalltalk .hljs-char,
+.go .hljs-constant,
+.hljs-change,
+.hljs-link,
+.lasso .hljs-variable,
+.makefile .hljs-variable,
+.asciidoc .hljs-bullet,
+.markdown .hljs-bullet,
+.asciidoc .hljs-link_url,
+.markdown .hljs-link_url {
+    color: rgba(102,203,155,1);
+}
+
+.hljs-label,
+.ruby .hljs-string,
+.hljs-decorator,
+.hljs-filter .hljs-argument,
+.hljs-localvars,
+.hljs-array,
+.hljs-attr_selector,
+.hljs-important,
+.hljs-pseudo,
+.hljs-pi,
+.haml .hljs-bullet,
+.hljs-doctype,
+.hljs-deletion,
+.hljs-envvar,
+.hljs-shebang,
+.apache .hljs-sqbracket,
+.nginx .hljs-built_in,
+.tex .hljs-formula,
+.erlang_repl .hljs-reserved,
+.hljs-prompt,
+.asciidoc .hljs-link_label,
+.markdown .hljs-link_label,
+.vhdl .hljs-attribute,
+.clojure .hljs-attribute,
+.asciidoc .hljs-attribute,
+.lasso .hljs-attribute,
+.coffeescript .hljs-property,
+.hljs-phony {
+    color: rgba(154,204,102,1);
+}
+
+.hljs-keyword,
+.hljs-id,
+.hljs-title,
+.hljs-built_in,
+.css .hljs-tag,
+.hljs-doctag,
+.smalltalk .hljs-class,
+.hljs-winutils,
+.bash .hljs-variable,
+.pf .hljs-variable,
+.apache .hljs-tag,
+.hljs-type,
+.hljs-typename,
+.tex .hljs-command,
+.asciidoc .hljs-strong,
+.markdown .hljs-strong,
+.hljs-request,
+.hljs-status,
+.tp .hljs-data,
+.tp .hljs-io {
+    font-size: 110%;
+    color: rgba(154,204,102,1);
+}
+
+.hljs-title,
+.hljs-section {
+    color: rgba(204,102,109,1);
+}
+
+.hljs-string {
+    color: rgba(102,203,155,1);
+}
+
+.asciidoc .hljs-emphasis,
+.markdown .hljs-emphasis,
+.tp .hljs-units {
+    font-style: italic;
+    color: rgba(154,204,102,1);
+}
+
+.markdown .hljs-strikethrough {
+    color: rgba(154,204,102,1);
+}
+
+.hljs-attr, * .hljs-attr {
+    color: rgba(154,204,102,1);
+}
+
+.nginx .hljs-built_in {
+    font-weight: normal;
+}
+
+html {
+    background-color: rgba(19,24,30,1);
+}
+
+body {
+    padding-top: 10px;
+    background-color: rgba(19,24,30,1);
+    font: 11pt .SF UI Mono;
+}
+
+code, code.hljs {
+    background-color: rgba(19,24,30,1);
+}
+
+pre > code.hljs { border: 1px solid rgba(34,34,34,0.250); } 
+
+* {
+    color: rgba(238,238,238,1);
+    font-family: -apple-system;
+}
+
+img { max-width: 100%; }
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    padding: .5625em .625em;
+    border: 1px solid rgba(238,238,238,0.250);
+}
+
+tr:nth-child(even) {
+    background: rgba(204,204,204,0.100);
+}
+
+}

@@ -1,32 +1,20 @@
 
-function escapeXml(unsafe) {
-  return unsafe.replace(/[<>&'"]/g, function (c) {
-      switch (c) {
-          case '<': return '&lt;';
-          case '>': return '&gt;';
-          case '&': return '&amp;';
-          case '\'': return '&apos;';
-          case '"': return '&quot;';
-      }
-  });
-}
-
 function textFromLines(arrayOrString) {
   if(!Array.isArray(arrayOrString)) return arrayOrString
   return arrayOrString.join("\n")	
 }
 
 function markdownQuotedValue(value) {
-let lines = Array.isArray(value) ? value : [value]
-var markdown = ""
-lines.forEach(line => {
-	markdown += "> " + line + "\n"
-})
-return markdown
+  let lines = Array.isArray(value) ? value : [value]
+  var markdown = ""
+  lines.forEach(line => {
+  	markdown += "> " + line + "\n"
+  })
+  return markdown
 }
 
 function appendMarkdown(markdown, element) {
-  let html = converter.makeHtml(markdown)
+  let html = htmlFromMarkdown(markdown)
   element.innerHTML += html	
 }
 
