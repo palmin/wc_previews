@@ -5,7 +5,7 @@ Working Copy is a Git client for iOS that allows previewing Markdown, Jupyter No
 and this repository shows how to change and extend this preview feature by adding javascript and css files.
 
 You should start by cloning this repository inside Working Copy. It needs to be at the outermost level. The
-files inside bundle and preview.html are only present to make it clear how previews work and make it easier
+files inside `bundle` and `preview.html` are only present to make it clear how previews work and make it easier
 to test in the same environment as Working Copy has. Changing these files inside Working Copy will not make
 any difference.
 
