@@ -26,8 +26,4 @@ Inside Working Copy file extensions are mapped to
 you can use these names instead of file extension such that `markdown.js` will match files ending with `.md` 
 as well as `.markdown`.
 
-Currently there is only a single *Custom Preview* mode which is available for all files and this is the
-`jupyter` mode which looks for `jupyter.js` and `jupyter.css` files.
-
-Later on there will be a way to map between the files you want to preview and the preview modes found inside
-`wc_previews` repository and even later UI will be added to configure preview modes in a nicer way.
+Later on a proper UI will be added to configure preview modes.
