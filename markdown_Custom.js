@@ -5,6 +5,8 @@ function renderMarkdown(markdown, element) {
   document.querySelectorAll('pre code').forEach((block) => {
     hljs.highlightBlock(block);
   });
+  
+  MathJax.typesetPromise()
 }
 
 function renderPreview(url) {
