@@ -2,14 +2,16 @@ Working Copy previews
 =====================
 
 [Working Copy](https://workingcopy.app/) is a Git client for iOS that allows previewing Markdown, Jupyter Notebooks, org-mode and AsciiDoc
-and this repository shows how to change and extend this preview feature by adding javascript and css files.
+and this repository shows how to change and extend this preview feature by adding html, javascript and css files.
 
 You should start by cloning this repository inside Working Copy. It needs to be at the outermost level. The
 files inside `bundle` and `preview.html` are only present to make it clear how previews work and make it easier
 to test in the same environment as Working Copy has. Changing these files inside Working Copy will not make
 any difference.
 
-The file types a preview mode supports is determined by the filename before the `.js` or `.css` extension.
+You only need to provide a `.html` file if the default preview template cannot be customized by changing the JavaScript or CSS it includes and if you just want to change the appearance of existing preview modes providing a `.css` file is often sufficient. 
+
+The file types a preview mode supports is determined by the filename before the `.html`, `.js` or `.css` extension.
 The javascript file `ipynb.js` would match files all `.ipynb` files. If the preview filename contains `_` this
 is used to describe both the files to match and the title of the preview mode as shown to the user. 
 The mode `ipynb_Custom.js` still previews all `.ipynb` files but has the title *Custom* instead 
