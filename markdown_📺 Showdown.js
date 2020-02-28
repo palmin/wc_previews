@@ -1,3 +1,6 @@
+// Based on Showdown:
+//   A bidirectional Markdown to HTML to Markdown converter written in Javascript
+//   https://github.com/showdownjs/showdown
 
 function renderMarkdown(markdown, element) {
   element.innerHTML = htmlFromMarkdown(markdown);
